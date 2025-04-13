@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RecipeService } from '../../../core/services/recipe.service';
-import { NgIf, NgFor } from '@angular/common'; // Import NgIf and NgFor
-import { Recipe } from '../../../core/models/recipe.model'; // Import Recipe model
+import { NgIf, NgFor } from '@angular/common'; 
+import { Recipe } from '../../../core/models/recipe.model'; 
 
 
 @Component({

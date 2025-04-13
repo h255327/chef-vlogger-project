@@ -10,8 +10,8 @@ export const routes: Routes = [
     { path: 'recipe-list', component: RecipeListComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'recipe-detail/:id', component: RecipeDetailComponent },
-    { path: '', redirectTo: 'home', pathMatch: 'full' }, // Default route
-    { path: '**', redirectTo: 'home' } // Wildcard fallback
+    { path: '', redirectTo: 'home', pathMatch: 'full' }, 
+    { path: '**', redirectTo: 'home' } 
 
 
 ];

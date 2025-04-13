@@ -16,6 +16,6 @@ import { NgIf } from '@angular/common';
 export class AppComponent {
   title = 'chef-vlog-project'; 
 
-  page = "home"; // default page
+  page = "home"; 
 
 }

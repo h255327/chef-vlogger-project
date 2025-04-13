@@ -1,4 +1,3 @@
-//itt vannak a home componenet (oldal) tesztjei
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';

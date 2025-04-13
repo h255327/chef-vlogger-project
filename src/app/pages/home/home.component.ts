@@ -1,4 +1,3 @@
-//itt van a home component (oldal) logikaja
 import { Component } from '@angular/core';
 
 @Component({
