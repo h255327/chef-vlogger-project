@@ -1,0 +1,24 @@
+<div *ngIf="recipes.length > 0; else noRecipes" class="recipe-list-container">
+  <div 
+    class="recipe-card" 
+    *ngFor="let recipe of filteredRecipes" 
+    [routerLink]="['/recipe-detail', recipe.id]"
+    title="Részletek megtekintése: {{ recipe.title }}"
+  >
+    <img 
+      [src]="recipe.imageUrl || 'assets/images/default.jpg'" 
+      [alt]="recipe.title || 'Recept képe'" 
+      class="recipe-img" 
+    />
+    <div class="recipe-info">
+      <h2>{{ recipe.title || 'Névtelen recept' }}</h2>
+      <p>{{ recipe.description || 'Nincs leírás.' }}</p>
+    </div>
+  </div>
+</div>
+
+<ng-template #noRecipes>
+  <div>
+    Nincsenek elérhető receptek.
+  </div>
+</ng-template>

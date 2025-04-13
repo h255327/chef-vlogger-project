@@ -1,0 +1,88 @@
+/* recipe-detail.component.scss */
+
+/* General container for recipe details */
+.recipe-detail-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Recipe image styling */
+  .detail-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ingredients list styling */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  /* Instructions paragraph styling */
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* "No recipe found" message styling */
+  .recipe-detail-container.no-recipe {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #f44336;  /* Red for error */
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  
+  /* Responsive design: Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .recipe-detail-container {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.3rem;
+    }
+  
+    .detail-img {
+      max-width: 90%;
+    }
+  }
+  

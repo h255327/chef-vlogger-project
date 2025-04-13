@@ -1,0 +1,19 @@
+<div class="recipe-detail-container" *ngIf="recipe">
+  <h1>{{ recipe.title }}</h1>
+  <img [src]="recipe.imageUrl" [alt]="recipe.title" class="detail-img" />
+
+  <h3>Hozzávalók</h3>
+  <ul>
+    <li *ngFor="let ingredient of recipe.ingredients">
+      {{ ingredient.quantity }} {{ ingredient.name }}
+    </li>
+  </ul>
+
+  <h3>Elkészítés</h3>
+  <p>{{ recipe.instructions }}</p>
+</div>
+
+<!-- If recipe is not found -->
+<div *ngIf="!recipe">
+  <p>A recept nem található.</p>
+</div>
